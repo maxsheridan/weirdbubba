@@ -170,9 +170,22 @@ footer > div {
     justify-content: space-between;
 }
 
-.some-extra-links {
+.just-a-list {
+    list-style: none;
+}
+
+.some-extra-links > ul {
     display: flex;
     gap: 1rem;
+}
+
+.vh {
+    position:absolute;
+    overflow:hidden;
+    width:1px;
+    height:1px;
+    clip-path:inset(50%);
+    white-space:nowrap;
 }
 
 @media (max-width: 480px) {
