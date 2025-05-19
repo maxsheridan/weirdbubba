@@ -14,14 +14,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'League Script';
-    src: url('/assets/type/LeagueScriptNumberOne-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
     --gap: clamp(1rem,3vw,1.25rem);
     --big-gap: clamp(1.8rem,3vw,2rem);
