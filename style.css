@@ -183,12 +183,6 @@ footer > div {
     gap: 1rem;
 }
 
-@media (min-width: 380px) {
-    .just-a-list {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media (max-width: 480px) {
     h2 {
         line-height: 1.8;
