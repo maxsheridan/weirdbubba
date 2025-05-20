@@ -122,9 +122,9 @@ a {
 
 .underline {
     text-decoration: underline;
-    text-decoration-thickness: 4px;
+    text-decoration-thickness: clamp(2.5px,.5vw,4px);
     text-decoration-color: var(--primary-color);
-    text-underline-offset: 4px;
+    text-underline-offset: clamp(2.5px,.5vw,4px);
     text-decoration-skip-ink: all;
 }
 
