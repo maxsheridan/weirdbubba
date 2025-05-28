@@ -94,10 +94,6 @@ main {
     margin: 0 auto;
 }
 
-.center {
-    text-align: center;
-}
-
 a {
     color: var(--primary-color);
     text-decoration: underline;
@@ -122,6 +118,10 @@ a {
     text-decoration-color: var(--primary-color);
     text-underline-offset: clamp(2.5px,.5vw,4px);
     text-decoration-skip-ink: all;
+}
+
+.center {
+    text-align: center;
 }
 
 .big-gap { 
