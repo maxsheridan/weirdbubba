@@ -16,8 +16,8 @@
 
 :root {
     --gap: clamp(1rem,3vw,1.25rem);
-    --big-gap: clamp(1.8rem,3vw,2rem);
-    --outer-padding: clamp(2rem, 3vw, 4rem) 1rem;
+    --big-gap: calc(var(--gap) * 1.5);
+    --outer-padding: 2rem 1rem;
     --max-width: 34rem;
     --font: 'Junction',system-ui,sans-serif;
     --body-font-size: clamp(1.125rem,3vw,1.25rem);
