@@ -159,6 +159,7 @@ hr {
 footer {
     width: 100%;
     max-width: var(--max-width);
+    padding: 2rem 0 0;
 }
 
 footer > div {
@@ -168,7 +169,7 @@ footer > div {
 
 .some-extra-links > ul {
     display: flex;
-    gap: 1rem;
+    gap: clamp(.75rem,3vw,1.25rem);
     list-style: none;
 }
 
