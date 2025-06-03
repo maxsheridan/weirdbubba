@@ -13,7 +13,7 @@
         <link rel="apple-touch-icon" href="/assets/icons/apple_touch_icon.png" type="image/png">
         <link rel="manifest" href="/manifest.json" type="application/json">
         <title>We are Weird Bubba</title>
-        <meta name="description" content="Limited-utility digital ephemera.">
+        <meta name="description" content="Limited utility digital ephemera.">
         <link rel="canonical" href="https://weirdbubba.maxsheridan.com">
         <meta name="thumbnail" content="https://weirdbubba.maxsheridan.com/assets/graphics/share.png">
         <meta property="og:site_name" content="Weird Bubba Studio">
@@ -24,6 +24,15 @@
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="1200">
         <meta property="og:image:height" content="630">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "We Are Weird Bubba",
+                "description": "Limited utility digital ephemera.",
+                "url": "https://weirdbubba.maxsheridan.com"
+            }
+        </script>
     </head>
     <body>
         <div class="acme-all-purpose-wrapper">
@@ -45,15 +54,21 @@
                                 The Web Design Concern of<br>
                                 Max Sheridan and Tug Wells
                             </h2>
+                        </div>
+                        <div class="vh">
+                            <p>
+                                Limited-utility digital ephemera.
+                            </p>
                         </div>   
                         <div class="big-gap">
-                            Nicosia — Paramaribo
+                            <p>
+                                Nicosia — Paramaribo
+                            </p>
                         </div>
                     </div>
                 </div>
             </main>
-            <footer role="contentinfo" aria-label="Footer">
-                <h2 class="vh">Copyright and Footer links</h2>
+            <footer aria-label="footer">
                 <hr aria-hidden="true">
                 <div>
                     <div>
@@ -76,14 +91,5 @@
             </footer>
         </div>
         <script>function copyEmail(){const email="weirdbubba@bozotexino.mozmail.com";navigator.clipboard.writeText(email).then(()=>{document.getElementById('copyMessage').style.display='inline';setTimeout(()=>{document.getElementById('copyMessage').style.display='none'},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "WebPage",
-                "name": "We Are Weird Bubba",
-                "description": "The Web Concern of Max Sheridan and Tug Wells.",
-                "url": "https://weirdbubba.maxsheridan.com"
-            }
-        </script>
     </body>
 </html>
