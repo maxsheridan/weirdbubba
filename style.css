@@ -42,7 +42,7 @@
     overscroll-behavior: none;
 }
 
-main * + * {
+main > * + * {
     margin-block-start: var(--gap);
 }
 
@@ -81,11 +81,17 @@ body {
 
 main {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
     width: 100%;
     max-width: var(--max-width);
+}
+
+main.full-width {
+    max-width: 52ch;
+    align-items: flex-start;
 }
 
 .bubba {
@@ -120,12 +126,29 @@ a {
     text-decoration-skip-ink: all;
 }
 
+.flex {
+    display: flex;
+}
+
 .center {
     text-align: center;
 }
 
+.left {
+    text-align: left;
+}
+
 .big-gap { 
     margin-block-start: var(--big-gap);
+}
+
+.space {
+    display:inline-block;
+    width:clamp(.7rem,3vw,.75rem)
+}
+
+red {
+    color: var(--highlight-color);
 }
 
 strong {
@@ -171,6 +194,11 @@ footer > div {
     display: flex;
     gap: clamp(.75rem,3vw,1.25rem);
     list-style: none;
+}
+
+.icon {
+    width: auto;
+    height: calc(var(--body-font-size) * 1.2)
 }
 
 .vh {
