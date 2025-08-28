@@ -195,9 +195,17 @@ footer > div {
     list-style: none;
 }
 
+.backlink {
+    margin-block-end: var(--gap);
+}
+
+.backlink a {
+    text-decoration: none;
+}
+
 .icon {
     width: auto;
-    height: calc(var(--body-font-size) * 1.2)
+    height: calc(var(--body-font-size) * 1.2);
 }
 
 .vh {
