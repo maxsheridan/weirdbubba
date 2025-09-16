@@ -122,6 +122,10 @@ a {
     }
 }
 
+.linkstyling-off a {
+    text-decoration: none;
+}
+
 .underline {
     text-decoration: underline;
     text-decoration-thickness: clamp(2.5px,.5vw,4px);
