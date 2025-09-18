@@ -94,7 +94,7 @@ main {
 }
 
 main.full-width {
-    max-width: 52ch;
+    max-width: 49ch;
     align-items: flex-start;
 }
 
