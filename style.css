@@ -15,13 +15,12 @@
 }
 
 :root {
-    --gap: clamp(1rem,3vw,1.25rem);
+    --gap: 1.25rem;
     --big-gap: calc(var(--gap) * 1.5);
     --outer-padding: 2rem 1rem;
     --max-width: 34rem;
     --font: 'Junction',system-ui,sans-serif;
-    --body-font-size: clamp(1.13rem,3vw,1.25rem);
-    --line-height: 1.5;
+    --body-font-size: calc(1rem + .35vw);
     --primary-color: #161718;
     --highlight-color: red;
     --accent-color: #8D8C8C;
@@ -63,12 +62,13 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
+    min-height: 100vh;
     margin: unset;
     font-family: var(--font);
     font-size: var(--body-font-size);
     font-weight: 400;
     font-style: normal;
-    line-height: var(--line-height);
+    line-height: 1.5;
     color: var(--primary-color);
     background-color: var(--background-color);
 }
@@ -116,6 +116,10 @@ a {
     transition: background-color .3s ease;
 }
 
+a:hover {
+    opacity: .6;
+}
+
 @media (hover:hover) and (pointer:fine) {
     a:hover {
         opacity: .6;
@@ -128,9 +132,9 @@ a {
 
 .underline {
     text-decoration: underline;
-    text-decoration-thickness: clamp(2.5px,.5vw,4px);
+    text-decoration-thickness: 3px;
     text-decoration-color: var(--primary-color);
-    text-underline-offset: clamp(2.5px,.5vw,4px);
+    text-underline-offset: 3px;
     text-decoration-skip-ink: all;
 }
 
@@ -152,7 +156,7 @@ a {
 
 .space {
     display:inline-block;
-    width:clamp(.7rem,3vw,.75rem)
+    width: .75rem;
 }
 
 strong {
@@ -161,7 +165,7 @@ strong {
 }
 
 .small-text {
-    font-size: clamp(1.08rem,3vw,1.15rem);
+    font-size: calc(var(--body-font-size) * .9);
 }
 
 h1 {
@@ -195,7 +199,6 @@ footer > div {
 
 .some-extra-links > ul {
     display: flex;
-    gap: clamp(.75rem,3vw,1.25rem);
     list-style: none;
 }
 
