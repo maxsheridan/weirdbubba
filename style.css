@@ -178,8 +178,8 @@ h2 {
 
 hr {
     height: 1px;
-    background: var(--primary-color);
     margin-block-end: var(--gap);
+    background: var(--primary-color);
 }
 
 footer {
