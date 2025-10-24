@@ -20,7 +20,7 @@
     --outer-padding: 2rem 1rem;
     --max-width: 34rem;
     --font: 'Junction',system-ui,sans-serif;
-    --body-font-size: calc(1rem + .35vw);
+    --paragraph: calc(1rem + .35vw);
     --primary: #161718;
     --highlight: red;
     --accent: #8D8C8C;
@@ -65,7 +65,7 @@ body {
     min-height: 100dvh;
     margin: unset;
     font-family: var(--font);
-    font-size: var(--body-font-size);
+    font-size: var(--paragraph);
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
@@ -161,7 +161,7 @@ strong {
 }
 
 .small-text {
-    font-size: calc(var(--body-font-size) * .9);
+    font-size: calc(var(--paragraph) * .9);
 }
 
 h1 {
@@ -208,7 +208,7 @@ footer > div {
 
 .icon {
     width: auto;
-    height: calc(var(--body-font-size) * 1.2);
+    height: calc(var(--paragraph) * 1.2);
 }
 
 .vh {
