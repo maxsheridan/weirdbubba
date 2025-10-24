@@ -21,14 +21,14 @@
     --max-width: 34rem;
     --font: 'Junction',system-ui,sans-serif;
     --body-font-size: calc(1rem + .35vw);
-    --primary-color: #161718;
-    --highlight-color: red;
-    --accent-color: #8D8C8C;
-    --background-color: #FBFAF7;
+    --primary: #161718;
+    --highlight: red;
+    --accent: #8D8C8C;
+    --background: #FBFAF7;
 }
 
 :focus-visible {
-    outline: 3px solid var(--highlight-color);
+    outline: 3px solid var(--highlight);
     outline-offset: 2px;
 }
 
@@ -69,8 +69,8 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    color: var(--primary-color);
-    background-color: var(--background-color);
+    color: var(--primary);
+    background-color: var(--background);
 }
 
 .acme-all-purpose-wrapper {
@@ -105,10 +105,10 @@ main.full-width {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--primary);
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    text-decoration-color: var(--accent-color);
+    text-decoration-color: var(--accent);
     text-underline-offset: 2px;
     text-decoration-skip-ink: all;
     pointer-events: auto;
@@ -129,7 +129,7 @@ a {
 .underline {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    text-decoration-color: var(--primary-color);
+    text-decoration-color: var(--primary);
     text-underline-offset: 3px;
     text-decoration-skip-ink: all;
 }
@@ -157,7 +157,7 @@ a {
 
 strong {
     font-weight: bold;
-    color: var(--highlight-color);
+    color: var(--highlight);
 }
 
 .small-text {
@@ -179,7 +179,7 @@ h2 {
 hr {
     height: 1px;
     margin-block-end: var(--gap);
-    background: var(--primary-color);
+    background: var(--primary);
 }
 
 footer {
