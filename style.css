@@ -146,13 +146,6 @@ a {
     text-align: left;
 }
 
-.flex-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .big-gap { 
     margin-block-start: var(--big-gap);
 }
@@ -200,9 +193,14 @@ footer > div {
     justify-content: space-between;
 }
 
-.some-extra-links > ul {
+ul.some-extra-links {
     display: flex;
     list-style: none;
+}
+
+.some-extra-links a {
+    display: flex;
+    line-height: 1;
 }
 
 .backlink {
@@ -215,7 +213,12 @@ footer > div {
 
 .icon {
     width: auto;
-    height: calc(var(--paragraph) * 1.2);
+    height: var(--paragraph);
+    line-height: 1;
+}
+
+.back-arrow {
+    height: calc(var(--paragraph) - 4px);
 }
 
 .vh {
