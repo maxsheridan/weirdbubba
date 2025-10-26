@@ -80,14 +80,13 @@
                             </li>
                             <li class="space" aria-hidden="true"></li>
                             <li>
-                                <a href="#" onclick="copyEmail()">Email</a>
-                                <p id="copyMessage" role="alert" aria-live="assertive" style="color: var(--accent-color); display: none">Copied!</p>
+                                <button id="copyLink" aria-label="Copy email address" type="button" onclick="copyEmail()">Email</button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </footer>
         </div>
-        <script>function copyEmail(){const email="weirdbubba@bozotexino.mozmail.com";navigator.clipboard.writeText(email).then(()=>{document.getElementById('copyMessage').style.display='inline';setTimeout(()=>{document.getElementById('copyMessage').style.display='none'},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
+        <script>function copyEmail(){const email="weirdbubba@maxsheridan.com";const copyLink=document.getElementById('copyLink');navigator.clipboard.writeText(email).then(()=>{const originalText=copyLink.textContent;const originalColor=copyLink.style.color;copyLink.textContent="Copied!";copyLink.style.color="var(--accent-color)";setTimeout(()=>{copyLink.textContent=originalText;copyLink.style.color=originalColor},2000)}).catch(err=>{alert('Failed to copy email: '+err)})}</script>
     </body>
 </html>

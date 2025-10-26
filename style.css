@@ -104,7 +104,8 @@ main.full-width {
     margin: 0 auto;
 }
 
-a {
+a,
+button {
     color: var(--primary);
     text-decoration: underline;
     text-decoration-thickness: 2px;
@@ -113,17 +114,38 @@ a {
     text-decoration-skip-ink: all;
     pointer-events: auto;
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: opacity 0.2s ease;
 }
 
 @media (hover:hover) and (pointer:fine) {
-    a:hover {
+    a:hover,
+    button:hover {
         opacity: .6;
     }
 }
 
 .linkstyling-off a {
     text-decoration: none;
+}
+
+#copyLink {
+    font: inherit;
+    line-height: normal;
+    color: inherit;
+}
+
+button,
+[role="button"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+    outline: 3px solid var(--highlight);
+    outline-offset: 3px;
+    border-radius: .25rem;
 }
 
 .underline {
@@ -195,6 +217,7 @@ footer > div {
 
 ul.some-extra-links {
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
