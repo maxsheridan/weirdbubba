@@ -99,9 +99,8 @@ main.full-width {
 }
 
 .bubba {
-    width: 70%;
-    max-width: 250px;
-    margin: 0 auto;
+    width: calc(60% + 1vw);
+    height: auto;
 }
 
 a,
