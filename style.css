@@ -17,10 +17,10 @@
 :root {
     --gap: 1.25rem;
     --big-gap: calc(var(--gap) * 1.5);
-    --outer-padding: 2rem 1rem;
+    --outer-padding: 2rem 2rem;
     --max-width: 34rem;
-    --font: 'Junction',system-ui,sans-serif;
-    --paragraph: calc(1rem + .35vw);
+    --font: 'Junction', system-ui, sans-serif;
+    --paragraph: calc(1.09rem + .35vw);
     --primary: #161718;
     --highlight: red;
     --accent: #8D8C8C;
@@ -99,7 +99,7 @@ main.full-width {
 }
 
 .bubba {
-    width: calc(60% + 1vw);
+    width: calc(55% + 1vw);
     height: auto;
 }
 
