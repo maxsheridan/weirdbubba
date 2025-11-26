@@ -228,22 +228,22 @@ ul.some-extra-links {
     line-height: 1;
 }
 
-.backlink {
+.back {
     margin-block-end: var(--gap);
 }
 
-.backlink a {
+.back a {
     text-decoration: none;
+}
+
+.arrow-lft {
+    width: .95em;
+    height: auto;
 }
 
 .icon {
     width: auto;
-    height: var(--paragraph);
-    line-height: 1;
-}
-
-.back-arrow {
-    height: calc(var(--paragraph) - 4px);
+    height: 1em;
 }
 
 .vh {
